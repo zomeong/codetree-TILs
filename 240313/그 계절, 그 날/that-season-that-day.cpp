@@ -24,6 +24,7 @@ int main() {
     }
     else if( m == 4 || m == 6 || m == 9 || m == 11){
         if(d == 31) cout << "-1";
+        return 0;
     }
     
     if(m == 1 || m == 3){
