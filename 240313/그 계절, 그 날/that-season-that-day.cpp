@@ -27,16 +27,16 @@ int main() {
     }
     
     if(m == 1 || m == 3){
-        cout << "Spring";
+        cout << "Winter";
     }
     else if(m == 4 || m == 6 || m == 5){
-        cout << "Summer";
+        cout << "Spring";
     }
     else if(m == 7 || m == 8 || m == 9){
-        cout << "Fall";
+        cout << "Summer";
     }
     else {
-        cout << "Winter";
+        cout << "Fall";
     }
 
     return 0;
