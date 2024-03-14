@@ -3,12 +3,13 @@ using namespace std;
 
 void cal(int a, int b){
     if(a > b){
-        int tmp = a;
-        a = b;
-        b = tmp;
+        cout << a * 2 << ' ' << b + 10;
+    }
+    else{
+        cout << a + 10 << ' ' << b * 2;
     }
 
-    cout << a + 10 << ' ' << b * 2;
+    
     return;
 }
 
