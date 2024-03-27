@@ -3,13 +3,13 @@ using namespace std;
 
 void printStar(int n){
 
-    if(n == 1){
+    if(n == 0){
         return;
     }
 
     printStar(--n);
 
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i <= n; i++){
         cout << "*";
     }
 
@@ -21,7 +21,7 @@ int main() {
     int n;
     cin >> n;
 
-    printStar(n+1);
+    printStar(n);
 
     return 0;
 }
