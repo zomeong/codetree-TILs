@@ -6,8 +6,10 @@ int arr[110];
 int max_cal(int m){
     if(m == 0) return arr[0];
 
-    if(max_cal(m - 1) < arr[m]) return arr[m];
-    else return max_cal(m - 1);
+    int cal = max_cal(m - 1);
+
+    if(cal < arr[m]) return arr[m];
+    else return cal;
 }
 
 int main() {
