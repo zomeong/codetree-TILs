@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int arr[101];
-int n;
+int arr[110];
 
 int max_cal(int m){
     if(m == 0) return arr[0];
@@ -13,6 +12,7 @@ int max_cal(int m){
 
 int main() {
 
+    int n;
     cin >> n;
     for(int i = 0; i < n; i++){
         cin >> arr[i];
