@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int arr[110];
@@ -6,10 +7,7 @@ int arr[110];
 int max_cal(int m){
     if(m == 0) return arr[0];
 
-    int cal = max_cal(m - 1);
-
-    if(cal < arr[m]) return arr[m];
-    else return cal;
+    return max(arr[m], max_cal(m - 1));
 }
 
 int main() {
