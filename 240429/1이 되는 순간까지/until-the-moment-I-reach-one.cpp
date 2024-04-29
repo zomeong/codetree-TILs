@@ -1,24 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int cnt = 0;
+int cal(int n){
+    if(n == 1) return 0;
 
-void cal(int n){
-    if(n == 1) return;
-
-    if(n%2 == 0) cal(n / 2);
-    else cal(n / 3);
-
-    cnt++;
+    if(n % 2 == 0) return cal(n / 2) + 1;
+    else return cal(n / 3) + 1;
 }
 
 int main() {
 
     int n;
     cin >> n;
-
-    cal(n);
-    cout << cnt;
+    cout << cal(n);
 
     return 0;
 }
